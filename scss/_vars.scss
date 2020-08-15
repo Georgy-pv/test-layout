@@ -1,0 +1,48 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+$faq_font: 'Montserrat', sans-serif;
+$regular_font: 'Roboto', sans-serif;
+$link_color: #5e727c;
+$main_theme_color: #B7C136;
+
+@mixin social_links-style {
+    border:1px solid $link_color;
+    padding-left: 5px;
+    display: inline-block;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    color: $link_color;
+    margin-right: 20px;
+    i{
+        position: relative;
+        left: 50%;
+        transform: translateX(-70%);
+    }
+}
+
+@mixin btn_main-style {
+    font-size: 14px;
+    color: $link_color;
+    border: 1px solid $link_color;
+    border-radius: 4px;
+    padding: 16px 53px;
+    text-decoration: none;
+    font-family: $regular_font;
+    &:hover{
+        border-color: $main_theme_color;
+        background: $main_theme_color;
+        color: #fff;
+    }
+}
+
+@mixin section_title_style {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 140%;
+    color: #003249;
+}
