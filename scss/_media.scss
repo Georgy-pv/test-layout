@@ -6,13 +6,6 @@
 //     }
 // }
 @media (max-width: 768px){
-    header{
-        .header_search{
-            .header_search_btn{
-                display: none;
-            }
-        }
-    }
     .for_family{
         background-image: none;
         .slick-arrow{
@@ -84,6 +77,9 @@
         }
         .slick-arrow{
             top: -101px;
+        }
+        .events_btn{
+            margin-top: 5px;
         }
     }
 }
