@@ -5,7 +5,13 @@
 //         }
 //     }
 // }
-@media (max-width: 768px){
+@media screen and (max-width: 768px){
+    .main-screen{
+        &_item{
+            height: 150px;
+            
+        }
+    }
     .for_family{
         background-image: none;
         .slick-arrow{
@@ -14,14 +20,11 @@
     }
        
 }
-@media (max-width: 350px){
+@media screen and (max-width: 350px){
     .main-screen{
         &_item{
             height: 100px;
             padding: 0;
-            background-position: center !important ;
-            background-repeat: no-repeat !important ;
-            background-size: cover !important ;
         }
         &_title{
             margin-top: 15px;
