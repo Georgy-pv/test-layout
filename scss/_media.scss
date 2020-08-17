@@ -31,6 +31,18 @@
             top: -129px;
         }
     }
+    .faq{
+        .faq_info_wrap{
+            padding: 37px;
+            display: block;
+            margin: 0 auto;
+            margin-top: 10px;
+            max-width: 280px;
+        }
+        .faq_all {
+            font-size: 14px; 
+        } 
+    }
        
 }
 @media screen and (max-width: 350px){
@@ -72,6 +84,9 @@
     }
     .faq{
         padding: 15px 0;
+        .faq_item_question{
+            font-size: 14px;
+        }
         .faq_info_wrap{
             padding: 37px;
             display: block;

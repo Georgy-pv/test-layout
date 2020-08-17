@@ -173,7 +173,6 @@ header .header_search-active .header_search_img {
 .main-screen .slick-dots {
   position: absolute;
   display: flex;
-  padding-left: 15px;
   bottom: 15px;
   left: 30px;
 }
@@ -847,6 +846,17 @@ header .header_search-active .header_search_img {
   .for_family .slick-arrow {
     top: -129px;
   }
+
+  .faq .faq_info_wrap {
+    padding: 37px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    max-width: 280px;
+  }
+  .faq .faq_all {
+    font-size: 14px;
+  }
 }
 @media screen and (max-width: 350px) {
   header {
@@ -885,6 +895,9 @@ header .header_search-active .header_search_img {
 
   .faq {
     padding: 15px 0;
+  }
+  .faq .faq_item_question {
+    font-size: 14px;
   }
   .faq .faq_info_wrap {
     padding: 37px;
