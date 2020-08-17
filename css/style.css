@@ -175,6 +175,7 @@ header .header_search-active .header_search_img {
   display: flex;
   padding-left: 15px;
   bottom: 15px;
+  left: 30px;
 }
 .main-screen .slick-dots li {
   list-style: none;
@@ -835,6 +836,10 @@ header .header_search-active .header_search_img {
   .main-screen_item {
     height: 150px;
   }
+  .main-screen .slick-dots {
+    padding-left: 15px;
+    bottom: -10px;
+  }
 
   .for_family {
     background-image: none;
@@ -862,12 +867,6 @@ header .header_search-active .header_search_img {
   .main-screen_subtitle, .main-screen_subtitle > * {
     width: 80%;
     font-size: 12px;
-  }
-  .main-screen .slick-dots {
-    position: absolute;
-    display: flex;
-    padding-left: 15px;
-    bottom: -15px;
   }
   .main-screen .slick-dots button {
     width: 18px;
