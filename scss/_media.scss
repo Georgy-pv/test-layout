@@ -6,6 +6,16 @@
 //     }
 // }
 @media screen and (max-width: 768px){
+    header{
+        padding-top: 60px;
+        .navbar-light .navbar-nav .nav-link{
+            color: #000;
+        }
+        .navbar-collapse{
+            background: #F5F5F4;
+            z-index: 3;
+        }
+    }
     .main-screen{
         &_item{
             height: 150px;
@@ -21,6 +31,9 @@
        
 }
 @media screen and (max-width: 350px){
+    header{
+        padding-top: 30px;
+    }
     .main-screen{
         &_item{
             height: 100px;

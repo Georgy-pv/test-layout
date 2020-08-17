@@ -1,1 +1,1 @@
-Test layout **for mobile and desktop**
+Test layout **for mobile (max 350px) and desktop**

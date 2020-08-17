@@ -6,20 +6,17 @@ body{
 
 header{
     font-family: $regular_font;
-    .left_header, .right_header{
-        width: 100%;
-        .navigation{
-            border-radius: 0px 4px 4px 0px;
-           }
+    .header_contact{
+        display: none;
+        padding: 30px 0;
     }
-   
-   .right_header > .navigation{
-    border-radius: 4px 0px 0px 4px;
-   }
-   .social_links{
-       padding: 30px 0;
-       display: none;
-   }
+    .header_btn{
+        text-align: right;
+        display: none;
+        a{
+            @include btn_main-style;
+        }
+    }
     .social_item{
         border:1px solid $link_color;
         padding-left: 5px;
@@ -35,27 +32,16 @@ header{
             transform: translateX(-70%);
         }
     }
-    .header_img{
-        img{
-            width: 100%;
-        }
-    }
-    .header_btn{
-        padding: 30px 0;
-        text-align: right;
-        display: none;
-        a{
-            @include btn_main-style;
-        }
-    }
-    .navigation{
+    .navigation_wrap{
         background: $main_theme_color;
-        min-height: 53px;
-        .navbar{
-            padding: 0.5rem 0;
-            padding-left: 1rem;
-        }
+        height: 50px;
     }
+    
+    .navbar{
+        padding: 0.5rem 0;
+        padding-left: 1rem;
+    }
+    
     .navbar-light {
         padding-left: 10px;
         .navbar-toggler {
@@ -71,8 +57,22 @@ header{
             }
         } 
     }
-    
-    
+    .header_logo{
+        padding: 15px;
+        height: 50px;
+        a{
+            position: absolute;
+            bottom: 10px;
+            left: 0;
+            right: 0;
+            display: block;
+            padding: 0 16px;
+
+        }
+        img{
+            width: 100%;
+        }
+    }
     .header_search{
         position: relative;
         .header_search_img{
@@ -126,6 +126,8 @@ header{
 
 .main-screen{
     &_item{
+        position: relative;
+        z-index: 1;
         background-position: center !important ;
         background-repeat: no-repeat !important ;
         background-size: cover !important ;
@@ -133,11 +135,13 @@ header{
         height: 400px;
         padding-bottom: 15px;
         img{
+            display: block;
             width: 100%;
             height: 100%;
         }
     }
     &_title{
+        z-index: 3;
         color: #5E727C;
         font-size: 36px;
         line-height: 42px;
@@ -146,12 +150,15 @@ header{
         margin-bottom: 50px;
         font-family: $regular_font;
         font-weight: bold;
+        position: relative;
     }
     &_subtitle, &_subtitle > *{
         color: #5E727C;
         max-width: 550px;
         font-family: $regular_font;
         font-weight: bold;
+        z-index: 3;
+        position: relative;
     }
     .slick-dots{
         position: absolute;
